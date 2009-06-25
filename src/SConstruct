@@ -1,0 +1,13 @@
+env = Environment()
+
+SOURCES = {
+  'all': [
+    'main.cc', 'Odns.cc', 'Socket.cc', 'ServerSocket.cc'
+  ]
+}
+
+env.Program(target='odns', source = SOURCES["all"])
+env.Clean('all', [
+  '*.o',
+  'odns'
+])
