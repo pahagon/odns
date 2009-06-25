@@ -11,37 +11,43 @@
 #include <string>
 #include <arpa/inet.h>
 
-const int MAXHOSTNAME = 200;
-const int MAXCONNECTIONS = 5;
-const int MAXRECV = 500;
+namespace odns {
+    namespace internal {
 
-class Socket {
-    public:
-        Socket();
-        virtual ~Socket();
+        const int MAXHOSTNAME = 200;
+        const int MAXCONNECTIONS = 5;
+        const int MAXRECV = 500;
 
-      // Server initialization
-        bool create();
-        bool bind ( const int port );
-        bool listen() const;
-        bool accept ( Socket& ) const;
+        class Socket {
+        public:
+            Socket();
+            virtual ~Socket();
 
-      // Client initialization
-        bool connect ( const std::string host, const int port );
+            // Server initialization
+            bool create();
+            bool bind ( const int port );
+            bool listen() const;
+            bool accept ( Socket& ) const;
 
-      // Data Transimission
-        bool send ( const std::string ) const;
-        int recv ( std::string& ) const;
+            // Client initialization
+            bool connect ( const std::string host, const int port );
 
-        void set_non_blocking ( const bool );
+            // Data Transimission
+            bool send ( const std::string ) const;
+            int recv ( std::string& ) const;
 
-        bool is_valid() const { return m_sock != -1; }
+            void set_non_blocking ( const bool );
 
-    private:
+            bool is_valid() const { return m_sock != -1; }
 
-        int m_sock;
-        sockaddr_in m_addr;
-};
+        private:
+
+            int m_sock;
+            sockaddr_in m_addr;
+        }; // Socket
+
+    } // namespace internal
+} // namespace odns
 
 
 #endif

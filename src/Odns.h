@@ -9,6 +9,6 @@ namespace odns {
             virtual ~Odns();
     };
     
-}
+}  // namespace odns
 
 #endif
