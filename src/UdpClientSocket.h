@@ -7,7 +7,7 @@ namespace Odns {
     class UdpClientSocket : public UdpSocket {
         public:
             UdpClientSocket(ISocketHandler&);
-
+            
             void OnRawData(const char *,size_t,struct sockaddr *,socklen_t);
     }; // UdpForwardSocket
 } // namespace Odns

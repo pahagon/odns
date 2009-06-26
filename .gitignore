@@ -1,3 +1,5 @@
 build
 odns
+._*
+*/._*
 .sconsign.dblite
