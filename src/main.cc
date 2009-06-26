@@ -1,9 +1,7 @@
-#include <iostream>
-#include "Socket.h"
+#include "Odns.h"
 
 int 
 main(int argc, char **argv) {
-    std::cout << "Isso é um dns forward e funciona.\n";
-    
+    Odns::Odns app;
     return 0;
 }

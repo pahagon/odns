@@ -1,7 +1,7 @@
-#ifndef Odns_class
-#define Odns_class
+#ifndef _ODNS_H
+#define _ODNS_H
 
-namespace odns {
+namespace Odns {
     
     class Odns {
         public:
@@ -9,6 +9,6 @@ namespace odns {
             virtual ~Odns();
     };
     
-}  // namespace odns
+}  // namespace Odns
 
 #endif
