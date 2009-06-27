@@ -1,7 +1,11 @@
-Onion DNS Forward
+Onion DNS Forward 
+Idea behind ODNS is to be a DNSCurve forwarder with same functionality into an existing server, adding link-level public-key protection to DNS packets.
 =================================
 
 Developed Under Linux
+
+DNSCurve
+  http://dnscurve.org/out-implement.html
 
 APIs
   C++ Socket pakage
