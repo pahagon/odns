@@ -1,0 +1,20 @@
+Developed Under Linux
+
+APIs
+  C++ Socket pakage
+  http://www.alhem.net/Sockets
+ 
+  Cryptography library NaCL
+  http://nacl.cr.yp.to/
+  Install NaCl
+  https://www.os3.nl/2008-2009/students/michiel_timmers/rp1
+
+Compiling
+   Scons to build projet 
+   http://www.alhem.net/Sockets/index.html
+
+Implementation Ref
+   http://github.com/agl/dnscurve/tree/master
+
+This code is avaliable
+   https://github.com/pahagon/odns/tree/master
