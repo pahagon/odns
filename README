@@ -18,7 +18,7 @@ APIs
 
 Compiling
    Scons to build projet 
-   http://www.alhem.net/Sockets/index.html
+   http://www.scons.org/
 
 Implementation Ref
    http://github.com/agl/dnscurve/tree/master
